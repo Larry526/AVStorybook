@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		05A13C921FBF6F6A00303B7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13C911FBF6F6A00303B7A /* AppDelegate.m */; };
-		05A13C951FBF6F6A00303B7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13C941FBF6F6A00303B7A /* ViewController.m */; };
 		05A13C981FBF6F6A00303B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A13C961FBF6F6A00303B7A /* Main.storyboard */; };
 		05A13C9A1FBF6F6A00303B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A13C991FBF6F6A00303B7A /* Assets.xcassets */; };
 		05A13C9D1FBF6F6A00303B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A13C9B1FBF6F6A00303B7A /* LaunchScreen.storyboard */; };
 		05A13CA01FBF6F6A00303B7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13C9F1FBF6F6A00303B7A /* main.m */; };
 		05A13CAA1FBF6F6A00303B7A /* AVStorybookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13CA91FBF6F6A00303B7A /* AVStorybookTests.m */; };
 		05A13CB51FBF6F6A00303B7A /* AVStorybookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13CB41FBF6F6A00303B7A /* AVStorybookUITests.m */; };
+		05A13CC41FBF89F900303B7A /* PageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13CC31FBF89F900303B7A /* PageData.m */; };
+		05A13CCB1FBF8B7A00303B7A /* StoryPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A13CCA1FBF8B7A00303B7A /* StoryPartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		05A13C8D1FBF6F6A00303B7A /* AVStorybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVStorybook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A13C901FBF6F6A00303B7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05A13C911FBF6F6A00303B7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05A13C931FBF6F6A00303B7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05A13C941FBF6F6A00303B7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05A13C971FBF6F6A00303B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05A13C991FBF6F6A00303B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A13C9C1FBF6F6A00303B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		05A13CB01FBF6F6A00303B7A /* AVStorybookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVStorybookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A13CB41FBF6F6A00303B7A /* AVStorybookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVStorybookUITests.m; sourceTree = "<group>"; };
 		05A13CB61FBF6F6A00303B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A13CC21FBF89F900303B7A /* PageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageData.h; sourceTree = "<group>"; };
+		05A13CC31FBF89F900303B7A /* PageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageData.m; sourceTree = "<group>"; };
+		05A13CC91FBF8B7A00303B7A /* StoryPartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryPartViewController.h; sourceTree = "<group>"; };
+		05A13CCA1FBF8B7A00303B7A /* StoryPartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryPartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,12 @@
 		05A13C8F1FBF6F6A00303B7A /* AVStorybook */ = {
 			isa = PBXGroup;
 			children = (
-				05A13C901FBF6F6A00303B7A /* AppDelegate.h */,
-				05A13C911FBF6F6A00303B7A /* AppDelegate.m */,
-				05A13C931FBF6F6A00303B7A /* ViewController.h */,
-				05A13C941FBF6F6A00303B7A /* ViewController.m */,
+				05A13CC61FBF8A3100303B7A /* Model */,
+				05A13CC81FBF8A4C00303B7A /* View */,
 				05A13C961FBF6F6A00303B7A /* Main.storyboard */,
-				05A13C991FBF6F6A00303B7A /* Assets.xcassets */,
-				05A13C9B1FBF6F6A00303B7A /* LaunchScreen.storyboard */,
+				05A13CC71FBF8A3F00303B7A /* Controller */,
 				05A13C9E1FBF6F6A00303B7A /* Info.plist */,
-				05A13C9F1FBF6F6A00303B7A /* main.m */,
+				05A13CC51FBF8A0300303B7A /* Supporting Files */,
 			);
 			path = AVStorybook;
 			sourceTree = "<group>";
@@ -130,6 +130,43 @@
 				05A13CB61FBF6F6A00303B7A /* Info.plist */,
 			);
 			path = AVStorybookUITests;
+			sourceTree = "<group>";
+		};
+		05A13CC51FBF8A0300303B7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05A13C901FBF6F6A00303B7A /* AppDelegate.h */,
+				05A13C9B1FBF6F6A00303B7A /* LaunchScreen.storyboard */,
+				05A13C9F1FBF6F6A00303B7A /* main.m */,
+				05A13C991FBF6F6A00303B7A /* Assets.xcassets */,
+				05A13C911FBF6F6A00303B7A /* AppDelegate.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05A13CC61FBF8A3100303B7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05A13CC21FBF89F900303B7A /* PageData.h */,
+				05A13CC31FBF89F900303B7A /* PageData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05A13CC71FBF8A3F00303B7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05A13CC91FBF8B7A00303B7A /* StoryPartViewController.h */,
+				05A13CCA1FBF8B7A00303B7A /* StoryPartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05A13CC81FBF8A4C00303B7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A13C951FBF6F6A00303B7A /* ViewController.m in Sources */,
+				05A13CC41FBF89F900303B7A /* PageData.m in Sources */,
 				05A13CA01FBF6F6A00303B7A /* main.m in Sources */,
 				05A13C921FBF6F6A00303B7A /* AppDelegate.m in Sources */,
+				05A13CCB1FBF8B7A00303B7A /* StoryPartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

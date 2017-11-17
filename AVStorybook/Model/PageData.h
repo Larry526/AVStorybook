@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  PageData.h
 //  AVStorybook
 //
 //  Created by Larry Luk on 2017-11-17.
 //  Copyright © 2017 Larry Luk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface PageData : NSObject
 
 @end
-
